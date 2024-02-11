@@ -1,0 +1,250 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: "Poppins", sans-serif;
+   font-size: 15px;
+ }
+
+ /* #################--Section 1---################# */
+ .top-portion {
+   background-color: hsl(0, 0%, 98%);
+   height: 54vh;
+   padding: 60px;
+ }
+
+ div.header {
+   max-width: 70vw;
+   height: 35vh;
+   margin: auto;
+   text-align: center;
+ }
+
+ div.header :nth-child(1) {
+   font-weight: 300;
+   font-size: 40px;
+ }
+
+ div.header :nth-child(2) {
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 1.5;
+ }
+
+ div.header :nth-child(3) {
+   font-weight: 200;
+   font-size: 17px;
+   margin-top: 23px;
+ }
+
+ div.header :nth-child(4) {
+   font-weight: 200;
+   font-size: 17px;
+   position: relative;
+   bottom: 25px;
+   margin-top: 23px;
+   line-height: 1.8;
+ }
+
+ @media (min-width:1400px) {
+   .top-portion {
+     height: 28vh;
+     padding: 60px;
+   }
+ }
+
+
+ /* #############---Section 2---################ */
+
+ .four-card-wrapper {
+   padding-top: 103px;
+   height: 100vh;
+   background-color: hsl(0, 0%, 98%);
+ }
+
+ div.cards {
+   margin-left: 86px;
+   max-width: 82vw;
+   height: 80vh;
+   display: grid;
+   grid-template-columns: 150px [area1] 150px [area2] 150px [area3]150px [area4];
+   grid-template-rows: 150px [area1] 150px [area2] 150px [area3]150px [area4];
+   justify-content: center;
+ }
+
+ .card {
+   width: 400px;
+   height: 300px;
+   border-radius: 5px;
+   background-color: white;
+   filter: drop-shadow(3px 2px 5px #b8c2d5);
+ }
+
+ .card1 {
+   grid-column: 1/3;
+   grid-row: 2/-4;
+   position: relative;
+   right: 272px;
+   top: 4px;
+   border-top: 5px solid hsl(180, 62%, 55%);
+ }
+
+ .card2 {
+   grid-column: 2/5;
+   grid-row: 1/-4;
+   border-top: 5px solid hsl(0, 78%, 62%);
+ }
+
+ .card3 {
+   grid-column: 3/5;
+   grid-row: 2/-4;
+   position: relative;
+   left: 272px;
+   top: 4px;
+   border-top: 5px solid hsl(212, 86%, 64%);
+ }
+
+ .card4 {
+   grid-column: 2/5;
+   position: relative;
+   top: 20px;
+   border-top: 5px solid hsl(34, 97%, 64%);
+ }
+
+ div.content {
+   padding: 33px;
+ }
+
+ div.content h3 {
+   font-weight: 600;
+   font-size: 23px;
+   line-height: 2.5;
+ }
+
+ div.content p {
+   font-weight: 200;
+   font-size: 13px;
+   line-height: 2;
+ }
+
+ .img-icon {
+   display: inline-block;
+   padding-left: 265px;
+   padding-top: 60px;
+ }
+
+ /* ##########---Section 1 mobile media query ---######## */
+ @media (max-width:376px) {
+  .top-portion {
+    background-color: hsl(0, 0%, 98%);
+    height: 27vh;
+    padding: 25px;
+  }
+
+  div.header {
+    max-width: 68vw;
+    height: 35vh;
+    margin:23px auto;
+    text-align: center;
+  }
+
+  div.header :nth-child(1) {
+    font-weight: 300;
+    font-size: 20px;
+  }
+ 
+  div.header :nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+ 
+  div.header :nth-child(3) {
+    font-weight: 200;
+    font-size: 12px;
+    text-align: justify;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+  }
+ 
+  div.header :nth-child(4) {
+    font-weight: 200;
+    font-size: 12px;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  /* ##########---Section 2 mobile media query ---######## */
+
+  .four-card-wrapper {
+    padding-top: 66px;
+    height: 150vh;
+    background-color: hsl(0, 0%, 98%);
+  }
+ 
+  div.cards {
+    margin: auto;
+    max-width: 82vw;
+    height: 138vh;
+    display: block;
+  }
+ 
+  .card {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    filter: drop-shadow(3px 2px 5px #b8c2d5);
+    position: relative;
+    left: 27px
+  }
+ 
+  .card1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+  }
+ 
+  .card2 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    margin-top: 23px;
+  }
+ 
+  .card3 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    margin-top: 16px;
+  }
+ 
+  .card4 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    margin-top: 12px;
+  }
+ 
+  div.content {
+    padding: 15px 23px;
+  }
+ 
+  div.content h3 {
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 1.5;
+  }
+ 
+  div.content p {
+    font-weight: 200;
+    font-size: 11px;
+  }
+ 
+  .img-icon {
+      display: inline-block;
+      padding-left: 143px;
+      padding-top: 32px;
+      width: 188px;
+  }
+ }
